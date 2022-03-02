@@ -1,0 +1,158 @@
+body,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .fair_tab_div {
+            display: flex;
+            width: 80vw;
+            margin: 1.5vw auto;
+        }
+
+        .fair_tab_select {
+            color: rgba(51, 95, 100);
+            font-weight: 600;
+            font-size: 18px;
+            font-style: oblique;
+        }
+
+        .fair_tab_div_p {
+            margin: 0;
+            padding: 0;
+            height: 32px;
+            line-height: 32px;
+            margin-left: 2vw;
+        }
+
+        .fair_banner_div {
+            width: 80vw;
+            margin: 2vw auto;
+        }
+
+        .fair_banner_div img {
+            width: 100%;
+        }
+
+        .fair_company,
+        .fair_major,
+        .fair_exhibition {
+            width: 80vw;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .fair_company_name {
+            width: 6vw;
+            color: rgb(134, 133, 133);
+        }
+
+        .fair_company_content_p {
+            width: 8vw;
+            line-height: 3;
+            white-space: nowrap;
+        }
+
+        .put_away::after {
+            content: "▲";
+            height: min-content;
+        }
+
+        .fair_company_content {
+            width: 78%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .fair_company_button_operation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .fair_company_button_div {
+            display: flex;
+        }
+
+        .fair_company_button_div button {
+            margin: 1vw;
+            padding: .2vw;
+            width: 6.5vw;
+            height: 3.5vw;
+            border: 1px solid rgba(51, 95, 100);
+            color: rgba(37, 85, 87);
+            font-size: 18px;
+            font-weight: 500;
+            background-color: transparent;
+        }
+
+        .fair_exhibition {
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 3vw auto;
+        }
+
+        .fair_exhibition_div {
+            margin: 2vw 0 0 1vw;
+            width: 19%;
+            background-color: rgba(247, 247, 247);
+        }
+
+        .fair_exhibition_div_label {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .fair_exhibition_div_label p {
+            padding: .5vw 1vw;
+            color: white;
+            background-color: rgba(83, 189, 177);
+        }
+
+        .fair_exhibition_div_title {
+            width: 80%;
+            margin: 2vw auto;
+            display: flex;
+        }
+
+        .fair_exhibition_div_title_image {
+            width: 2vw;
+            height: 2vw;
+        }
+
+        .fair_exhibition_div_title_p {
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 1vw;
+        }
+
+        .fair_exhibition_div_content {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 12px;
+            line-height: 2;
+        }
+
+        .fair_exhibition_div_tip {
+            width: 70%;
+            margin: 1vw auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        .fair_exhibition_div_tip_span {
+            color: rgba(83, 189, 177);
+            font-weight: 500;
+        }
+
+        .fair_exhibition_div_button {
+            width: 100%;
+            margin: 3vw auto 0;
+            padding: 1vw 0;
+            color: white;
+            background-color: rgba(83, 189, 177);
+            text-align: center;
+        }

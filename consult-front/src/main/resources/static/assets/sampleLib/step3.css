@@ -1,0 +1,72 @@
+.uploader-example {
+    padding: 15px;
+    font-size: 12px;
+}
+
+.uploader-example .uploader-btn {
+    margin-right: 4px;
+}
+
+.uploader-example .uploader-list {
+    max-height: 440px;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*上传控件按钮*/
+.uploader-btn {
+    color: #FFF;
+    background-color: #67C23A;
+    border-color: #67C23A;
+}
+
+.uploader-btn:hover {
+    background: #85ce61;
+    border-color: #85ce61;
+    color: #FFF;
+}
+
+/* 隐藏上传按钮 */
+#global-uploader-btn {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+/*上传控件列表中行样式*/
+.uploader-file {
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 2px;
+    border: none;
+}
+
+.uploader-file-actions > span {
+    margin-top: 9px;
+}
+
+/*调整单个文件所有字段的宽度*/
+.uploader-file-icon {
+    display: none;
+}
+
+.uploader-file-name {
+    width: 56%;
+    text-indent: 8px;
+}
+
+.uploader-file-size {
+    width: 70px;
+}
+
+.uploader-file-meta {
+    display: none;
+}
+
+.uploader-file-status {
+    width: 200px;
+}
+
+.uploader-file-actions {
+    width: 90px;
+}

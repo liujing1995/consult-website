@@ -1,0 +1,260 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#rgzn_main {
+    width: 100%;
+    height: 100vh;
+}
+
+.rgzn_header {
+	margin-top:60px;
+    background: rgb(226, 239, 246);
+    width: 100%;
+}
+
+.rgzn_header_content {
+    width: 80vw;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+.rgzn_text_div {
+    font-size: 18px;
+    line-height: 2;
+    width: 30vw;
+}
+
+.rgzn_title_size {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.rgzn_image_div {
+    width: 20.1vw;
+    margin: 0px 4vw 0px 6vw;
+}
+
+.rgzn_content_title {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 67px;
+    margin-bottom: 30px;
+}
+
+.rgzn_content_size {
+    text-align: center;
+    margin-bottom: 53px;
+    color: #666666;
+    font-size: 1em;
+    line-height: 2;
+}
+
+.rgzn_content_image_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rgzn_experience {
+    width: 100%;
+    background-color: rgb(215, 215, 215);
+}
+
+.rgzn_image_content {
+    display: flex;
+    justify-content: center;
+}
+
+.rgzn_experience_img {
+    width: 35vw;
+}
+
+.rgzn_center_div {
+    width: 9vw;
+    height: 9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../image/cont.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 9vw -3vw 0 -3vw;
+    z-index: 10;
+    color: #fff;
+    font-size: 18px;
+}
+
+.rgzn_advantage {
+    width: 100%;
+}
+
+.rgzn_advantage_div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.rgzn_advantage_item {
+    width: 18vw;
+    padding: 0 20px;
+}
+
+.rgzn_size_center {
+    text-align: center;
+}
+
+.rgzn_advantage_size {
+    font-size: small;
+    text-align: center;
+}
+
+.rgzn_advantage_item_img1 {
+    width: 80px;
+    height: 80px;
+    background: url("../image/icons.png") no-repeat;
+    background-position: -400px -120px;
+    margin: 40px auto;
+}
+
+.rgzn_advantage_item_img2 {
+    width: 80px;
+    height: 80px;
+    background: url("../image/icons.png") no-repeat;
+    background-position: -500px -120px;
+    margin: 40px auto;
+}
+
+.rgzn_advantage_item_img3 {
+    width: 80px;
+    height: 80px;
+    background: url("../image/icons.png") no-repeat;
+    background-position: -600px -120px;
+    margin: 40px auto;
+}
+
+.rgzn_application {
+    width: 100%;
+    background-color: rgb(215, 215, 215);
+}
+
+.rgzn_application_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rgzn_application_img1 {
+    width: 23vw;
+    height: 20vw;
+    margin: 1vw;
+    color: #fff;
+    background: url("../image/txsb_dxyybg1.jpg") no-repeat;
+}
+
+.rgzn_application_img2 {
+    width: 23vw;
+    height: 20vw;
+    margin: 1vw;
+    color: #fff;
+    background: url("../image/txsb_dxyybg2.jpg") no-repeat;
+}
+
+.rgzn_application_div_title {
+    font-size: 16px;
+    padding: 10px 0 14px 20px;
+}
+
+.rgzn_application_div_p {
+    padding: 0 20px;
+    max-width: 12vw;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.rgzn_footer {
+    width: 100%;
+    padding: 50px 0px;
+    background: rgb(1, 14, 42);
+}
+
+.rgzn_footer_content {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.rgzn_footer_content_right {
+    margin-left: 20vw;
+}
+
+.rgzn_footer_content_right_ewm {
+    width: 8vw;
+}
+
+.rgzn_footer_content_left_p {
+    color: #adadad;
+    font-size: 14px;
+}
+.fixed-top .container{
+    display: flex;
+    align-items: center;
+}
+.fixed-top .container .row{
+    flex: 1;
+}
+.loginIn{
+    /* width: 120px; */
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+    font-size: 14px;
+}
+
+.contOne {
+    width: 35vw;
+    position: absolute;
+    left: 13vw;
+    top: -10vw;
+}
+
+.scanning {
+    width: 35vw;
+    position: absolute;
+    left: 13vw;
+    top: -10vw;
+    animation: MoveUpDown 2s linear infinite;
+    animation-iteration-count: 1;
+}
+
+@keyframes MoveUpDown {
+    0% {
+        top: 43vw;
+    }
+
+    100% {
+        top: 61vw;
+    }
+}
+
+.scanning1 {
+    width: 35vw;
+    position: absolute;
+    left: 13vw;
+    top: -10vw;
+    animation: MoveUpDown1 2s linear infinite;
+    animation-iteration-count: 1;
+}
+@keyframes MoveUpDown1 {
+    0% {
+        top: 40vw;
+    }
+
+    100% {
+        top: 50vw;
+    }
+}

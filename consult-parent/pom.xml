@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.yirong.csp</groupId>
+        <artifactId>csp-parent</artifactId>
+        <version>2.2.0.4</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.consult</groupId>
+    <artifactId>consult-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>../consult-ms</module>
+    </modules>
+
+    <properties>
+        <!-- 定义csp的版本号 -->
+        <csp.version>2.2.0.4</csp.version>
+        <buildProjectDir>${basedir}/../sgai-build</buildProjectDir>
+        <!-- 开启 Dockerfile 构建 -->
+        <dockerfileEnable>true</dockerfileEnable>
+        <!-- Java dockerfile 文件 -->
+        <java.docker.image.script.template>Dockerfile-java-alpine</java.docker.image.script.template>
+        <!-- Java docker 镜像入口脚本文件 -->
+        <java.docker.entrypoint.template>entrypoint-java.sh</java.docker.entrypoint.template>
+        <java.docker.image>openjdk:8-jre-alpine</java.docker.image>
+        <!-- docker 私有镜像仓库地址, 若非 https 认证需在 daemon.json 中的 insecure-registries 配置此地址 -->
+        <docker.registry>master01:5000</docker.registry>
+        <!-- appassembler-maven-plugin插件生成启动脚本的jvm参数 -->
+        <extraJvmArguments>-server -Xms1024M -Xmx1024M -Xss512k -XX:MetaspaceSize=256M -XX:MaxMetaspaceSize=256M -XX:+UseG1GC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCApplicationStoppedTime -Xloggc:./logs/gc.log -Dfile.encoding=UTF-8</extraJvmArguments>
+        <unitils.version>2.3</unitils.version>
+        <!-- es依赖包 -->
+        <elasticsearch.version>6.7.2</elasticsearch.version>
+        <elasticsearch.spring.data.version>3.2.0.RELEASE</elasticsearch.spring.data.version>
+
+        <log4j2.version>2.17.1</log4j2.version>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>${maven-antrun-plugin.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.ant</groupId>
+                            <artifactId>ant-nodeps</artifactId>
+                            <version>1.8.1</version>
+                        </dependency>
+                    </dependencies>
+                    <executions>
+                        <execution>
+                            <id>antrun-prepare-package</id>
+                            <phase>prepare-package</phase>
+                            <goals>
+                                <goal>run</goal>
+                            </goals>
+                            <configuration>
+                                <target>
+                                    <copy file="${buildDockerfileScriptDir}/${java.docker.entrypoint.template}" tofile="${appassemblerOutputDirectory}/dockerfile/entrypoint.sh" failonerror="false"/>
+                                </target>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <!-- 构建 docker 镜像 -->
+                <plugin>
+                    <groupId>com.spotify</groupId>
+                    <artifactId>dockerfile-maven-plugin</artifactId>
+                    <version>1.4.13</version>
+                    <executions>
+                        <execution>
+                            <id>default</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>build</goal>
+                                <goal>push</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <repository>${docker.registry}/${project.artifactId}</repository>
+                        <tag>${project.version}</tag>
+                        <pullNewerImage>false</pullNewerImage>
+                        <contextDirectory>${assemblyOutputDirectory}/${project.version}/${project.build.finalName}/${project.build.finalName}</contextDirectory>
+                        <buildArgs>
+                            <JAR_FILE>${project.build.finalName}-boot.jar</JAR_FILE>
+                            <MAIN_CLASS>${startMainClass}</MAIN_CLASS>
+                        </buildArgs>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+
+</project>

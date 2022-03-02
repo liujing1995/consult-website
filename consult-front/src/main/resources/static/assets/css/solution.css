@@ -1,0 +1,254 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.solution_size_center {
+    text-align: center;
+}
+
+.solution_size_left {
+    text-align: left;
+}
+
+.solution_color {
+    color: #666666;
+}
+
+.solution_content_title {
+    font-size: 36px;
+}
+
+.solution_line_height {
+
+    line-height: 2;
+	margin: 0 auto;
+	width: 80%;
+	margin-top:40px;
+}
+
+#solution_main {
+    width: 100%;
+    height: 100vh;
+}
+
+.solution_header {
+	margin-top:60px;
+    background: rgb(207, 218, 225);
+    width: 100%;
+}
+
+.solution_header_content {
+	
+    width: 70vw;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+.solution_text_div {
+    font-size: 18px;
+    line-height: 2;
+    width: 30vw;
+}
+
+.solution_title_size {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.solution_image_div {
+    width: 20vw;
+    margin: 4vw 4vw 4vw 15vw;
+}
+
+.solution_image_div img {
+    width: 30vw;
+}
+
+.solution_content {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.solution_programme,
+.solution_application {
+	
+    width: 80vw;
+    margin: auto;
+	margin-top:100px;
+}
+
+.solution_content_img_content {
+	margin-top:60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.solution_product {
+	margin-top:100px;
+    background: rgb(215, 215, 215);
+}
+
+.solution_row_content {
+    display: flex;
+    justify-content: center;
+}
+
+.solution_row_content_div {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.solution_row_content_div_image {
+    width: 8vw;
+    height: 8vw;
+    margin: 0 auto;
+}
+
+.solution_row_content_div_content {
+    width: 80%;
+    margin: 3vw auto;
+}
+
+.solution_footer {
+    width: 100%;
+    padding: 50px 0px;
+    background: rgb(1, 14, 42);
+}
+
+.solution_footer_content {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.solution_footer_content_right {
+    margin-left: 20vw;
+}
+
+.solution_footer_content_right_ewm {
+    width: 8vw;
+}
+
+.solution_footer_content_left_p {
+    color: #adadad;
+    font-size: 14px;
+}
+
+.solution_application_typical {
+	margin-top:100px;
+    text-align: center;
+    background-image: url('./assets/application_images/zhutizuizhong.png');
+    background-size: 100% 100%;
+}
+
+.solution_application_typical_title {
+    font-size: 36px;
+    font-weight: 500;
+    padding: 1vw 0 1.5vw 0;
+}
+
+.solution_application_typical_content {
+    display: flex;
+    justify-content: center;
+}
+
+.solution_application_typical_content_div {
+    width: 15%;
+    margin: 0 1vw;
+    background-color: white;
+}
+
+.solution_application_typical_content_div_img {
+    width: 30%;
+    height: 30%;
+    margin: 3vw auto;
+}
+.solution_application_typical_content_title {
+    font-size: 24px;
+    padding: 1vw 0 1.5vw 0;
+}
+
+.solution_application_typical_content_size {
+    font-size: 18px;
+    padding: 1vw 0 1.5vw 0;
+}
+
+.product_application_typical {
+	margin-top:100px;
+    text-align: center;
+    background-image: url('./product/yangbendi.png');
+    background-size: 100% 100%;
+	height: 100vh;
+}
+
+.product_application_typical1 {
+
+    text-align: center;
+    background-image: url('./product/moxingdi.png');
+    background-size: 100% 100%;
+	height: 100vh;
+}
+
+.product_application_typical2 {
+
+    text-align: center;
+    background-image: url('./product/yunxingdi.png');
+    background-size: 100% 100%;
+	height: 100vh;
+}
+
+.product_application_typical3 {
+
+    text-align: center;
+    background-image: url('./product/yangbendi.png');
+    background-size: 100% 100%;
+	height: 100vh;
+}
+
+.product_image_div {
+	
+    width: 80vw;
+    margin: 10vw -14vw 4vw 10vw;
+}
+
+.product_image_div img {
+	max-width: 100vw !important;
+}
+
+.product_image_div1 {
+	
+    width: 80vw;
+    margin: 10vw -14vw 4vw 10vw;
+}
+
+.product_image_div1 img {
+	max-width: 40vw !important;
+}
+
+.product_header_content {
+	
+    width: 70vw;
+    margin: 0px 100px;
+    display: flex;
+    align-items: left;
+}
+
+.product_text_div {
+    font-size: 1.5em;
+    line-height: 2;
+    width: 60vw;
+	text-align: left;
+}
+
+.product_title_size {
+	margin-top:100px;
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}

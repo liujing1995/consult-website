@@ -1,0 +1,176 @@
+.step2-left-body{
+    height: calc(100% - 20px);
+    width: 200px;
+    display: inline-block;
+    box-shadow: -1px 0px 0px 2px #ccc, 0px -1px 0px 2px #ccc, 1px 0px 0px 2px #ccc, 0px 1px 0px 2px #ccc;
+    margin: 5px;
+}
+.step2-left-head{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    padding-left: 10px;
+    border-bottom: 1px solid;
+}
+.step2-left-head span{
+    font-size: 16px;
+    padding-left: 5px;
+}
+.step2-left-head i:hover{
+    cursor: pointer;
+}
+.step2-left-head-tool{
+    float: right;
+    margin-right: 5px;
+}
+.step2-left-tree{
+    height: calc(100% - 40px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+.step2-left-tree::-webkit-scrollbar {
+    width: 0;
+}
+.step2-left-tree li{
+    width: 200px;
+    padding: 0px;
+    overflow: hidden;
+}
+.step2-left-tree li:hover{
+    cursor: pointer;
+    color:#57A3F2;
+}
+.step2-left-tree li .cate-tag{
+    width: 210px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    line-height: 25px;
+    padding-left: 15px;
+}
+.step2-left-tree li .cate-tag strong{
+    height: 25px;
+    line-height: 25px;
+    width: 210px;
+    display: block;
+    text-indent: 0px;
+    background: url(../libs/sideNav/images/gray-arrow.gif) 200px 10px no-repeat;
+}
+.step2-left-tree .on .cate-tag strong a{
+    color:#57A3F2;
+}
+.step2-left-tree li .cate-tag strong a{
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+}
+.step2-left-tree li .cate-tag strong a.cate-this{
+    color:#57A3F2 !important;
+}
+.step2-right-body{
+    width: calc(100% - 230px);
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    margin-left: 25px;
+}
+
+.layui-table tr{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e6e6e6;
+}
+.layui-table-body::-webkit-scrollbar {
+    width: 0;
+}
+
+.layui-table-view .layui-table[lay-size="sm"] .layui-select-title .layui-input {
+    height: 28px;
+    margin-top: -8px;
+}
+.layui-table-view .layui-table[lay-size="sm"] .layui-form-select dl dt,.layui-table-view .layui-form-select dl dd {
+    line-height: 28px;
+}
+.layui-table-view .layui-table[lay-size="sm"] .layui-form-select dl {
+    top: 28px;
+}
+.layui-table-view .layui-table .layui-select-title .layui-input {
+    height: 32px;
+    margin-top: -3px;
+}
+.layui-table-view .layui-table .layui-form-select dl dt,.layui-table-view .layui-form-select dl dd {
+    line-height: 32px;
+}
+.layui-table-view .layui-table .layui-form-select dl {
+    top: 32px;
+}
+.layui-table-view .layui-table[lay-size="lg"] .layui-select-title .layui-input {
+    height: 38px;
+    margin-top: 0;
+}
+.layui-table-view .layui-table[lay-size="lg"] .layui-form-select dl dt,.layui-table-view .layui-form-select dl dd {
+    line-height: 38px;
+}
+.layui-table-view .layui-table[lay-size="lg"] .layui-form-select dl {
+    top: 38px;
+}
+.layui-table-view .layui-colorpicker {
+    padding: 0px;
+}
+.layui-table-view .layui-input {
+    height: 100%;
+}
+.layui-table-view .layui-table-header{
+    overflow: hidden !important;
+}
+.layui-table-view .layui-table-body{
+    margin-right: 0px;
+}
+.layui-table-view .layui-table{
+    width: 100%;
+}
+.layui-form  .layui-form-label{
+    width: 85px;
+}
+
+.step2-row{
+    margin-left: 0px !important;
+    height: calc(100% - 50px);
+}
+.step2-left-col{
+    height: calc(100% - 20px);
+    width: 300px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto;
+}
+.step2-right-col{
+    height: calc(100% - 20px);
+    width: calc(100% - 350px);
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+}

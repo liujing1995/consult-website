@@ -1,0 +1,290 @@
+
+.headerBg{background: url(../images/bg.jpg) no-repeat;font-family:microsoft yahei;background-size:100% 100%;  width: 100%;height: 100%;}
+@-webkit-keyframes cir5 {
+  0% {
+    -webkit-transform: rotateY(-240deg) rotateZ(10deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-600deg) rotateZ(10deg);
+  }
+}
+@keyframes cir5 {
+  0% {
+    transform: rotateY(-240deg) rotateZ(10deg);
+  }
+  100% {
+    transform: rotateY(-600deg) rotateZ(10deg);
+  }
+}
+@keyframes cir {
+  0% {
+    transform: rotateX(70deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(70deg) rotateY(-10deg) rotateZ(-360deg);
+  }
+}
+@keyframes cir_p {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+@-webkit-keyframes cir {
+  0% {
+    -webkit-transform: rotateX(80deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(80deg) rotateY(-10deg) rotateZ(-360deg);
+  }
+}
+@-webkit-keyframes cir_p {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+
+.u_p3d{
+    -webkit-transform-style: preserve-3d !important;
+    transform-style: preserve-3d !important;
+}
+.ui_base {
+    top: 217px;
+    position: relative;
+    /* width: 400px; */
+    /* height: 0px; */
+    /* margin: 100px auto; */
+    -webkit-perspective: 1000px;
+    -webkit-perspective-origin: 50% 0%;
+    perspective: 1000px;
+    perspective-origin: 50% 0%;
+    /*left: 66%;*/
+}
+.base{
+	-webkit-transform: rotateX(80deg) rotateY(-10deg);
+    transform: rotateX(80deg) rotateY(-10deg);
+    position: relative;
+    width: 600px;
+    height: 600px;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    animation: cir 10s linear 0s infinite;
+}
+.ball_base {
+     -webkit-transform-origin: 225px 0px;
+    transform-origin: 128px -45px;
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    width: 225px;
+    height: 127px;
+}
+.ball{
+	-webkit-transition:all 2s ease-out 0ms;
+	transition:all 2s ease-out 0ms;
+	-webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	/*background-image: url(../images/sm44.png);*/
+	background-size: 100% 100%;
+	left: 0px;
+	top: 0px;
+	color: rgba(255, 255, 255, 0);
+	font-size: 20px;
+	opacity: 1;
+	overflow: hidden;
+}
+		
+.ball_c {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    position: absolute;
+    width: 157px;
+    height: 157px;
+    line-height: 157px;
+    text-align: center;
+    background-image: url(../images/ball_center.png);
+    left: 90px;
+    top: 50px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.pan {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/c1.png);
+    background-size: 100% 100%;
+    -webkit-animation: cir_p 5s linear 0s infinite;
+	animation: cir_p 5s linear 0s infinite;
+}
+
+.ball {
+    color: #fff;
+    opacity: 1;
+}
+.ball_5 .ball {
+	-webkit-animation: cir5 10s linear 0s infinite;
+	animation: cir5 10s linear 0s infinite;
+	-webkit-transition-delay: 300ms !important;
+	transition-delay: 300ms !important;
+}
+.ball_5 {
+    -webkit-transform: rotateX(-90deg) rotateY(240deg) translateY(-70px);
+	transform: rotateX(-90deg) rotateY(240deg) translateY(-70px);
+}
+
+.baseCopy{
+	-webkit-transform: rotateX(160deg) rotateY(50deg);
+	transform: rotateX(80deg) rotateY(-10deg);
+	position: relative;
+	width: 600px;
+	height: 600px;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+	animation: cirCopy 10s linear 0s infinite;
+}
+@-webkit-keyframes cir5Copy {
+  0% {
+    -webkit-transform: rotateY(361deg) rotateZ(45deg);
+  }
+  100% {
+    -webkit-transform: rotateY(1deg) rotateZ(45deg);
+  }
+}
+@keyframes cir5Copy {
+  0% {
+    transform: rotateY(361deg) rotateZ(45deg);
+  }
+  100% {
+    transform: rotateY(1deg) rotateZ(45deg);
+  }
+}
+@keyframes cirCopy {
+  0% {
+    transform: rotateX(132deg) rotateY(30deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(132deg) rotateY(30deg) rotateZ(-360deg);
+  }
+}
+@keyframes cir_pCopy {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+@-webkit-keyframes cirCopy {
+  0% {
+    -webkit-transform: rotateX(80deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(80deg) rotateY(-10deg) rotateZ(-360deg);
+  }
+}
+@-webkit-keyframes cir_pCopy {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+
+.u_p3dCopy{
+    -webkit-transform-style: preserve-3d !important;
+    transform-style: preserve-3d !important;
+}
+
+.ui_baseCopy {
+    top: -75%;
+    position: relative;
+    /* width: 400px; */
+    /* height: 0px; */
+    /* margin: 100px auto; */
+    -webkit-perspective: 1000px;
+    -webkit-perspective-origin: 50% 0%;
+    perspective: 1000px;
+    perspective-origin: 70% 0%;
+    /*left: 65%;*/
+}
+.ball_baseCopy {
+     -webkit-transform-origin: 225px 0px;
+    transform-origin: 128px -45px;
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    width: 225px;
+    height: 127px;
+}
+.ballCopy{
+	-webkit-transition:all 2s ease-out 0ms;
+	transition:all 2s ease-out 0ms;
+	-webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	/*background-image: url(../images/sm33.png);*/
+	background-size: 100% 100%;
+	left: 0px;
+	top: 0px;
+	color: rgba(255, 255, 255, 0);
+	font-size: 20px;
+	opacity: 1;
+	overflow: hidden;
+}
+		
+.ball_cCopy {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    position: absolute;
+    width: 157px;
+    height: 157px;
+    line-height: 157px;
+    text-align: center;
+    background-image: url(../images/ball_center.png);
+    left: 90px;
+    top: 50px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.panCopy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/c1.png");
+    background-size: 100% 100%;
+    -webkit-animation: cir_pCopy 5s linear 0s infinite;
+	animation: cir_pCopy 5s linear 0s infinite;
+}
+
+.ballCopy {
+    color: #fff;
+    opacity: 1;
+}
+.ball_5Copy .ballCopy {
+	-webkit-animation: cir5Copy 10s linear 0s infinite;
+	animation: cir5Copy 10s linear 0s infinite;
+	-webkit-transition-delay: 300ms !important;
+	transition-delay: 300ms !important;
+}
+.ball_5Copy {
+    -webkit-transform: rotateX(-90deg) rotateY(240deg) translateY(-70px);
+	transform: rotateX(-90deg) rotateY(240deg) translateY(-70px);
+}

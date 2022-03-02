@@ -1,0 +1,222 @@
+/** 登录页面样式 */
+
+body {
+    background-color: #ffffff;
+}
+
+/** 头部样式 */
+.layui-layout-admin .layui-header {
+    font-family: Myriad Pro, Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    /* color: rgba(255, 255, 255, 0.85) !important; */
+    padding-left: 50px;
+    color: #666666;
+    height: 80px;
+    line-height: 80px;
+    box-shadow:none;
+}
+
+.layui-layout-admin .layui-header img {
+    height: 45px;
+    width: 45px;
+    margin-right: 20px;
+}
+
+.layui-layout-admin .layui-body {
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-image: url("../images/login/loginBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper{
+    height: 100%;
+    width: 340px;
+    padding: 0 50px;
+    position: relative;
+    background-color:rgba(255,255,255,1)
+}
+
+.login-content{
+    height: 100%;
+    /*width: 340px;*/
+    /*position: absolute;*/
+    /*top: 45%;*/
+    /*margin-top: -240px;*/
+}
+
+.login-tit .layui-elem-field{
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
+
+.login-tit .layui-elem-field legend{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Microsoft Yahei;
+}
+
+.login-subtit .layui-elem-field{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #7ECEF4;
+    border-color: #7ECEF4;
+    margin: 0;
+}
+
+.login-subtit .layui-elem-field legend{
+    font-size: 16px;
+}
+
+
+.layui-form-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.layadmin-user-login-icon {
+    position: absolute;
+    left: 1px;
+    top: 6px;
+    width: 38px;
+    line-height: 36px;
+    text-align: center;
+    color: #d2d2d2;
+}
+/*消除google浏览器黄色框*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  box-shadow:0 0 0 60px #fff inset;
+  /*字的颜色*/
+  -webkit-text-fill-color: #878787;
+}
+.layui-form-item .layui-input {
+    padding-left: 38px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #eee;
+}
+
+.login-body .login-captcha {
+    width: 100%;
+    cursor: pointer;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.login-body .login-other > * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.login-body .login-other .layui-icon {
+    position: relative;
+    top: 2px;
+    font-size: 26px;
+}
+
+.layui-btn-fluid,.layui-btn:not(.layui-btn-primary):not(.layui-btn-normal):not(.layui-btn-warm):not(.layui-btn-danger):not(.layui-btn-disabled){
+    height: 50px;
+    background: #0a835f;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.layui-btn-login-type{
+    background: transparent;
+    border: 1px solid #7ECEF4;
+    color: #7ECEF4;
+    width: 100px;
+    margin: 20px;
+}
+
+.layui-carousel,.layui-carousel>[carousel-item]>*{
+    background: transparent;
+}
+
+.layui-carousel div{
+    vertical-align:middle;
+    text-align:center
+}
+
+.layui-carousel span{
+    height: 100%;vertical-align: middle;display: inline-block
+}
+
+.layui-carousel img{
+    /* width: 100%;
+    height: 100%; */
+    vertical-align: middle;
+    
+}
+
+.layui-layout-admin .layui-footer {
+    left: 0;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.layui-form-checkbox[lay-skin=primary] span {
+    color: #7ECEF4;
+}
+
+/** 移动设备样式 */
+@media screen and (min-height: 590px) {
+    .login-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-height: 670px) {
+    .login-body {
+        padding: 110px 10px 40px 10px;
+    }
+}
+
+/** 辅助样式 */
+.layui-link {
+    color: #029789 !important;
+}
+
+.layui-link:hover {
+    opacity: .8;
+}
+
+.pull-right {
+    float: right;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.sign-user{
+    text-align: right;
+    margin-right: 15px;
+}
+
+.sign-user a{
+    color: #fff;
+}

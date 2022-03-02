@@ -1,0 +1,87 @@
+/* 首页-数据分类 */
+.t4_sjfl {width: 1170px; background: #fff; clear: both; padding: 20px 0px;}
+.t4_sjfl_cons { height:100%; padding:0;float: left }
+.t4_ly_fl, .t4_ztcj_lists { width: 147px; }
+.t4_ly_fl li, .t4_ztcj_lists li { height: 66px; line-height: 66px; border-bottom: 1px solid #39546c; cursor: pointer; text-align: center; background: #072947; color: #fff; font-size: 14px; }
+.t4_ly_fl li.current, .t4_ztcj_lists li.current { background: #062139; color: #198ef8; }
+.t4_sjfl_tit { color: #fff; height: 66px; line-height: 66px; background: #198ef8; text-align: center; }
+.t4_sjfl_tit img { padding: 0 10px 0 0; }
+.t4_sjfl_cons .t4_r { background: #fff; }
+.t4_sjfl_cons .t4_r ul { box-sizing: border-box; margin: 16px 0px 16px 8px; }
+.t4_sjfl_cons .t4_r ul li { width: 169px; height: 130px; border: 1px solid #edeef0; position: relative; float: left; margin: 0 8px 16px 8px; text-align: center; cursor: pointer; }
+.t4_sjfl_cons .t4_r ul li i { display: block; margin: 0 auto; }
+/* 首页-数据分类-领域图标 */
+.t4_sjfl_cons .t4_ly_icons li.t4_li01 i { width: 50px; height: 30px;margin-bottom: 30px;font-size: 50px;color: #57A3F2;margin-top: 10px; }
+/* 首页-数据分类-行业图标 */
+/* 首页-数据分类-主题图标 */
+/* 首页-数据分类-主题图标 */
+/* 首页-数据分类-区/部门 */
+.t4_sjfl_cons .t4_r ul.t4_q li, .t4_sjfl_cons .t4_r ul.t4_bm li { width: 147px; height: 70px; line-height: 70px; }
+.t4_sjfl_cons .t4_r ul.t4_q li a, .t4_sjfl_cons .t4_r ul.t4_bm li a { color: #333; display: block; }
+.t4_sjfl_cons .t4_r ul.t4_q li a:hover { background: #198ef8; border: 1px solid #198ef8; color: #fff; }
+.t4_sjfl_cons .t4_r ul li div.t4_none { display: none; width: 100%; position: absolute; top: 0; left: 0; }
+.t4_sjfl_cons .t4_r ul li div.t4_none { background: #198ef8; height: 106px; border: 1px solid #198ef8; text-align: left; color: #fff; }
+.t4_sjfl_cons .t4_r ul li div.t4_none p { padding: 16px 0 0 16px; }
+.t4_sjfl_cons .t4_r ul li div.t4_none span { font-weight: bold; padding: 0 5px 0 0; display: inline-block; }
+.t4_sjfl_cons .t4_r ul li:hover div.t4_none { display: block; height: 130px; }
+.t4_subsjfl { display: none; height: 635px; overflow-y: auto; overflow-x: hidden; }
+.t4_sjfl_cons .t4_r ul.t4_bm { clear: both; overflow: hidden; }
+.t4_sjfl_cons .t4_r ul.t4_bm div.t4_block { position: relative; text-align: left; }
+.t4_sjfl_cons .t4_r ul.t4_b div.t4_block { text-align: center; }
+.t4_sjfl_cons .t4_r ul.t4_bm li div.t4_none p { padding: 5px 0 0 16px; }
+.t4_sjfl_cons .t4_r ul.t4_bm li { width: 180px; }
+.t4_sjfl_cons .t4_r ul.t4_bm li div.t4_none { height: 70px; line-height: 20px; }
+.t4_sjfl_cons .t4_r ul.t4_bm img { float: left; padding: 21px 4px 0 15px; }
+.t4_sjfl_cons .t4_r ul.t4_bm div.t4_block p { float: left; line-height: 70px; }
+.t4_sjfl_cons .t4_r ul.t4_bm div.t4_block p span { display: inline-block; vertical-align: middle; line-height: 20px; }
+.t4_sjfl_cons .t4_r ul.t4_b div.t4_block p { float: none; }
+
+.index-heading{font-size: 2em;padding-bottom: 0.6em;padding-left: 1em;text-transform: uppercase;position: relative;color: rgb(53, 53, 53);font-family: Arial, "Microsoft YaHei", 微软雅黑, sans-serif;}
+.newResource{display: inline-block;vertical-align: top;width: 390px;margin-left: 15px;}
+.newResource_body{border-top: 1px solid #999;padding-top: 15px;}
+.newResource_body_li{
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.newResource_body_left{
+    display: inline-block;
+    width: 30px;
+    vertical-align: top;
+    background: #57A3F2;
+    height: 100%;
+}
+.newResource_body_right{
+    display: inline-block;
+    vertical-align: top;
+    width: 340px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.right_title{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+}
+.right_content{
+    font-size: 1.1em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 6px;
+}
+.right_type{
+    margin-bottom: 6px;
+    font-size: 1.1em;
+}
+.right_time{
+    font-size: 1.1em;
+    color: #999;
+}
