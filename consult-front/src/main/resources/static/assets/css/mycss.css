@@ -31,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     height: 60px;
-    max-width: 75%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 28px 0 44px;
     box-sizing: border-box;
@@ -46,4 +46,30 @@ body {
 
 .header-wrapper .header_nav-list{
     display: flex;
+    margin-left: auto;
+}
+
+.header_nav-item {
+    margin-left: 20px;
+    width: 80px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .4px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+}
+
+.header-wrapper .header .add-hover-line:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    width: 100%;
+    height: 2px;
+    background: #f85f48;
+    opacity: 0;
+    transition: opacity .3s;
 }
