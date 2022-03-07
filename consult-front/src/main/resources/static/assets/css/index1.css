@@ -200,10 +200,10 @@ body {
     color: #adadad;
     font-size: 14px;
 }
-.fixed-top .container{
+/*.fixed-top .container{
     display: flex;
     align-items: center;
-}
+}*/
 .fixed-top .container .row{
     flex: 1;
 }
