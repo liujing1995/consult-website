@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./assets/css/mycss.css">
 
     <script src="/assets/js/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 
 
 
@@ -25,12 +24,30 @@
                         <div class="header_nav-item add-hover-line">
                             <span>成为行家</span>
                         </div>
-                        <div class="header_nav-item qr add-hover-line">关注公众号</div>
+                        <div class="header_nav-item qr add-hover-line">
+                            <span class="qr-text">关注公众号</span>
+                            <div class="qrcode-group" id="qrcode-group">
+                                <div class="qrcode-item">
+                                    <img src="/assets/img/2067272.png" class="qrcode">
+                                    <p>欢迎关注！</p>
+                                </div>
+
+                                <div class="qrcode-item">
+                                    <img src="/assets/img/2067272.png" class="qrcode">
+                                    <p>欢迎关注！</p>
+                                </div>
+
+                            </div>
+                        </div>
                         <div class="header_nav-item user-info add-hover-line">登录/注册</div>
 
                     </nav>
                 </div>
 
+            </div>
+            <div class="index-header">
+                <div class="slogan"></div>
+                <div class="search-wrapper"></div>
             </div>
 
 
@@ -46,6 +63,20 @@
 
 
 <script>
+    //jQuery
+    //鼠标移入显示
+    $(".qr").mouseenter(function () {
+        //$("#content").show();
+        debugger
+        $("#qrcode-group").css("display", "flex");
+    })
+
+    //鼠标移出隐藏
+    $(".qr").mouseleave(function () {
+        //$("#content").hide();
+        $("#qrcode-group").css("display", "none");
+    })
+
 
 </script>
 </html>

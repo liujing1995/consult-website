@@ -82,5 +82,72 @@ div{
     transition: opacity .3s;
 }
 
+.header-wrapper .qr{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.header-wrapper .qr-text{
+    display: block;
+    width: 80px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+}
+
+.header-wrapper .qrcode-group{
+    display: none;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -150px;
+    padding: 20px 20px 12px;
+    width: 300px;
+    height: 180px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 7px 24px 0 rgb(0 0 0 / 6%);
+}
+
+.header-wrapper .qrcode-group .qrcode-item{
+    width: 120px;
+
+}
+
+.header-wrapper .qrcode-group .qrcode-item img{
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+.header-wrapper .qrcode-group .qrcode-item p{
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: .4px;
+    font-weight: 300;
+
+}
+
+/*
+############### index-header ###############
+*/
+
+.header-wrapper .index-header{
+    position: relative;
+    margin: 0 auto;
+    padding: 60px 0;
+    background: #fafafa;
+    width: 1068px;
+}
+
+
 
 
