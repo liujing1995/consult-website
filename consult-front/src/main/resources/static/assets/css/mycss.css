@@ -148,6 +148,12 @@ div{
     width: 1068px;
 }
 
-
+.header-wrapper .index-header .slogan{
+    line-height: 84px;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #333;
+}
 
 
