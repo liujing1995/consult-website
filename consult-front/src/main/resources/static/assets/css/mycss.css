@@ -43,7 +43,7 @@ div{
 }
 
 .header-wrapper .search-wrapper{
-    width: 508px;
+    width: 805px;
     font-size: 16px;
     position: relative;
 }
@@ -155,5 +155,48 @@ div{
     letter-spacing: 4px;
     color: #333;
 }
+.header-wrapper .index-header .slogan .red{
+    color: red;
+}
+.header-wrapper .index-header .search-wrapper{
+    margin-top: 20px;
+    width: 805px;
+    font-size: 16px;
+    position: relative;
+    transition: opacity .3s;
+    transform: translateY(0);
+    opacity: 1;
+}
+.header-wrapper .index-header .placeholder .label{
+    flex: none;
+    height: 22px;
+    font-weight: 300;
+    letter-spacing: .6px;
+    color: #999999;
+}
+.header-wrapper .index-header .search-wrapper .el-input{
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
 
+}
+.header-wrapper .index-header .el-input__inner{
+    height: 80px;
+    line-height: 1.5px;
+    background: #fff;
+    box-shadow: 0 7px 24px 0 rgb(0 0 0 / 6%);
+    font-size: 14px;
 
+}
+
+.el-autocomplete{
+    width: 100%;
+}
+
+.header-wrapper .index-header .icon-search{
+    width: 80px;
+    height: 80px;
+    background-image: url("https://ff-static.zaih.cn/falcon-web/img/edbbb6f.png");
+
+}

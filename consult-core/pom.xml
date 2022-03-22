@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>consult-ms</artifactId>
+        <groupId>com.consult</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../consult-ms</relativePath>
+    </parent>
+
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.consult</groupId>
+    <artifactId>consult-core</artifactId>
+    <packaging>pom</packaging>
+
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>consult-app</module>
+        <module>consul-rpc-client</module>
+        <module>consul-rpc-dto</module>
+        <module>consult-app</module>
+        <module>consult-rpc-client</module>
+        <module>consult-rpc-dto</module>
+    </modules>
+
+
+</project>
